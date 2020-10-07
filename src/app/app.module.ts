@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
 // Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -25,8 +27,9 @@ import { RegisterComponent } from './login/register.component';
     Pagesmodule,
     APP_ROUTES,
     FormsModule,
+    ServiceModule,
   ],
-  providers: [],
+providers: [] ,
   bootstrap: [AppComponent],
 })
 export class AppModule {}
